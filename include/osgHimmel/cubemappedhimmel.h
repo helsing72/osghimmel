@@ -31,8 +31,8 @@
 #ifndef __CUBEMAPPEDHIMMEL_H__
 #define __CUBEMAPPEDHIMMEL_H__
 
-#include "declspec.h"
-#include "abstractmappedhimmel.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/abstractmappedhimmel.h>
 
 #include <map>
 

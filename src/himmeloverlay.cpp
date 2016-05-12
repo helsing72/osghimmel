@@ -27,14 +27,14 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "himmeloverlay.h"
+#include <osgHimmel/himmeloverlay.h>
 
-#include "atime.h"
-#include "julianday.h"
-#include "timef.h"
-#include "abstracthimmel.h"
-#include "himmel.h"
-#include "astronomy.h"
+#include <osgHimmel/atime.h>
+#include <osgHimmel/julianday.h>
+#include <osgHimmel/timef.h>
+#include <osgHimmel/abstracthimmel.h>
+#include <osgHimmel/himmel.h>
+#include <osgHimmel/astronomy.h>
 
 #include <osg/Vec3>
 

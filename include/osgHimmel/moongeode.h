@@ -31,7 +31,7 @@
 #ifndef __MOONGEODE_H__
 #define __MOONGEODE_H__
 
-#include "declspec.h"
+#include <osgHimmel/declspec.h>
 
 #include <osg/Geode>
 

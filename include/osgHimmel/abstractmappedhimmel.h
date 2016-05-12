@@ -31,11 +31,11 @@
 #ifndef __ABSTRACTMAPPEDHIMMEL_H__
 #define __ABSTRACTMAPPEDHIMMEL_H__
 
-#include "declspec.h"
-#include "abstracthimmel.h"
-#include "twounitschanger.h"
-#include "pragmanote.h"
-#include "himmelquad.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/abstracthimmel.h>
+#include <osgHimmel/twounitschanger.h>
+#include <osgHimmel/pragmanote.h>
+#include <osgHimmel/himmelquad.h>
 
 #ifdef OSGHIMMEL_EXPORTS
 #include <osg/MatrixTransform>

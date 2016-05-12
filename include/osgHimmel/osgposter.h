@@ -23,7 +23,7 @@
 #ifndef __PRINTPOSTERHANDLER_H__
 #define __PRINTPOSTERHANDLER_H__
 
-#include "declspec.h"
+#include <osgHimmel/declspec.h>
 
 #include <osgViewer/Viewer>
 

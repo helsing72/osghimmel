@@ -31,7 +31,7 @@
 #ifndef __BRIGHTSTARS_H__
 #define __BRIGHTSTARS_H__
 
-#include "declspec.h"
+#include <osgHimmel/declspec.h>
 
 
 namespace osgHimmel

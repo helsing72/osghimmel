@@ -32,7 +32,7 @@
 
 #include "test.h"
 
-#include "osgHimmel/twounitschanger.h"
+#include <osgHimmel/twounitschanger.h>
 
 
 using namespace osgHimmel;

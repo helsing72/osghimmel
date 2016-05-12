@@ -31,7 +31,7 @@
 #ifndef __STARMAPGEODE_H__
 #define __STARMAPGEODE_H__
 
-#include "declspec.h"
+#include <osgHimmel/declspec.h>
 
 #include <osg/Geode>
 

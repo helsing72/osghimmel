@@ -27,12 +27,12 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "moon.h"
+#include <osgHimmel/moon.h>
 
-#include "sun.h"
-#include "earth.h"
-#include "siderealtime.h"
-#include "mathmacros.h"
+#include <osgHimmel/sun.h>
+#include <osgHimmel/earth.h>
+#include <osgHimmel/siderealtime.h>
+#include <osgHimmel/mathmacros.h>
 
 #include <assert.h>
 

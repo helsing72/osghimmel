@@ -31,9 +31,9 @@
 #ifndef __EARTH_H__
 #define __EARTH_H__
 
-#include "declspec.h"
-#include "julianday.h"
-#include "typedefs.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/julianday.h>
+#include <osgHimmel/typedefs.h>
 
 
 namespace osgHimmel

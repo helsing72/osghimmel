@@ -89,11 +89,11 @@ find_package(OpenSceneGraph 3.0.0 REQUIRED osgDB osgGA osgText osgViewer osgUtil
 
 set(OSG_PLUGINS osgPlugins-${OPENSCENEGRAPH_VERSION})
 
-# sources
-include_directories(${OPENSCENEGRAPH_INCLUDE_DIRS})
-
 # osgHimmel public includes
 include_directories(include)
+
+# sources
+include_directories(${OPENSCENEGRAPH_INCLUDE_DIRS})
 
 # add the osgHimmel library source
 add_subdirectory(src)

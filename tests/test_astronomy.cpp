@@ -31,15 +31,15 @@
 #include "test_astronomy.h"
 #include "test.h"
 
-#include "osgHimmel/mathmacros.h"
-#include "osgHimmel/atime.h"
-#include "osgHimmel/julianday.h"
-#include "osgHimmel/siderealtime.h"
-#include "osgHimmel/coords.h"
-#include "osgHimmel/moon.h"
-#include "osgHimmel/sun.h"
-#include "osgHimmel/earth.h"
-#include "osgHimmel/stars.h"
+#include <osgHimmel/mathmacros.h>
+#include <osgHimmel/atime.h>
+#include <osgHimmel/julianday.h>
+#include <osgHimmel/siderealtime.h>
+#include <osgHimmel/coords.h>
+#include <osgHimmel/moon.h>
+#include <osgHimmel/sun.h>
+#include <osgHimmel/earth.h>
+#include <osgHimmel/stars.h>
 
 
 using namespace osgHimmel;

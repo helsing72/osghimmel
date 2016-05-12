@@ -31,8 +31,11 @@
 #ifndef __COORDS_H__
 #define __COORDS_H__
 
-#include "julianday.h"
-#include "pragmanote.h"
+#include <osgHimmel/julianday.h>
+#include <osgHimmel/pragmanote.h>
+#include <osgHimmel/mathmacros.h>
+
+#include <assert.h>
 
 #include <osg/Vec3>
 
@@ -151,11 +154,6 @@ typedef s_HorizontalCoords<float> t_horf;
 //
 //} t_galCoords;
 
-
-
-#include "mathmacros.h"
-
-#include <assert.h>
 
 template<typename T>
 s_EquatorialCoords<T>::s_EquatorialCoords()

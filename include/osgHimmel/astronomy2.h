@@ -31,8 +31,8 @@
 #ifndef __ASTRONOMY2_H__
 #define __ASTRONOMY2_H__
 
-#include "declspec.h"
-#include "abstractastronomy.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/abstractastronomy.h>
 
 
 namespace osgHimmel

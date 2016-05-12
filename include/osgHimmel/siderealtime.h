@@ -31,9 +31,9 @@
 #ifndef __SIDERALTIME_H__
 #define __SIDERALTIME_H__
 
-#include "declspec.h"
-#include "typedefs.h"
-#include "atime.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/typedefs.h>
+#include <osgHimmel/atime.h>
 
 
 namespace osgHimmel

@@ -27,13 +27,13 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "moongeode.h"
+#include <osgHimmel/moongeode.h>
 
-#include "himmel.h"
-#include "himmelquad.h"
-#include "abstractastronomy.h"
-#include "mathmacros.h"
-#include "interpolate.h"
+#include <osgHimmel/himmel.h>
+#include <osgHimmel/himmelquad.h>
+#include <osgHimmel/abstractastronomy.h>
+#include <osgHimmel/mathmacros.h>
+#include <osgHimmel/interpolate.h>
 
 #include "shaderfragment/common.h"
 #include "shaderfragment/scattering.h"

@@ -27,20 +27,20 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "himmel.h"
+#include <osgHimmel/himmel.h>
 
-#include "mathmacros.h"
-#include "earth.h"
-#include "timef.h"
-#include "astronomy.h"
-#include "himmelquad.h"
-#include "atmospheregeode.h"
-#include "moongeode.h"
-#include "moonglaregeode.h"
-#include "starsgeode.h"
-#include "starmapgeode.h"
-#include "highcloudlayergeode.h"
-#include "dubecloudlayergeode.h"
+#include <osgHimmel/mathmacros.h>
+#include <osgHimmel/earth.h>
+#include <osgHimmel/timef.h>
+#include <osgHimmel/astronomy.h>
+#include <osgHimmel/himmelquad.h>
+#include <osgHimmel/atmospheregeode.h>
+#include <osgHimmel/moongeode.h>
+#include <osgHimmel/moonglaregeode.h>
+#include <osgHimmel/starsgeode.h>
+#include <osgHimmel/starmapgeode.h>
+#include <osgHimmel/highcloudlayergeode.h>
+#include <osgHimmel/dubecloudlayergeode.h>
 
 #include <osg/ShapeDrawable>
 

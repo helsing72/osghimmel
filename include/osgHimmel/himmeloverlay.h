@@ -31,7 +31,7 @@
 #ifndef __HIMMELOVERLAY_H__
 #define __HIMMELOVERLAY_H__
 
-#include "declspec.h"
+#include <osgHimmel/declspec.h>
 
 #include <osg/Projection>
 #include <osg/MatrixTransform>

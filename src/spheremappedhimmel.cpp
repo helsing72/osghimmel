@@ -27,7 +27,7 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "spheremappedhimmel.h"
+#include <osgHimmel/spheremappedhimmel.h>
 
 #include "shaderfragment/common.h"
 #include "shaderfragment/blend_normal.h"

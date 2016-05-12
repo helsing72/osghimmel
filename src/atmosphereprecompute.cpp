@@ -37,11 +37,11 @@
 // he kindly provided me on request. (roche.emmanuel@gmail.com)
 
 
-#include "atmosphereprecompute.h"
+#include <osgHimmel/atmosphereprecompute.h>
 
-#include "himmel.h"
-#include "earth.h"
-#include "strutils.h"
+#include <osgHimmel/himmel.h>
+#include <osgHimmel/earth.h>
+#include <osgHimmel/strutils.h>
 
 #include "shaderfragment/bruneton_common.h"
 #include "shaderfragment/bruneton_inscatter.h"

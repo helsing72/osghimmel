@@ -27,12 +27,12 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "abstractmappedhimmel.h"
+#include <osgHimmel/abstractmappedhimmel.h>
 
-#include "timef.h"
-#include "himmelquad.h"
-#include "coords.h"
-#include "mathmacros.h"
+#include <osgHimmel/timef.h>
+#include <osgHimmel/himmelquad.h>
+#include <osgHimmel/coords.h>
+#include <osgHimmel/mathmacros.h>
 
 #include "shaderfragment/common.h"
 

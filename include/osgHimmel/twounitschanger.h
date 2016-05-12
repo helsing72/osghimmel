@@ -31,8 +31,8 @@
 #ifndef __TWOUNITSCHANGER_H__
 #define __TWOUNITSCHANGER_H__
 
-#include "declspec.h"
-#include "interpolate.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/interpolate.h>
 
 #include <osg/GL>
 

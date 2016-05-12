@@ -31,9 +31,9 @@
 #ifndef __ABSTRACTASTRONOMY_H__
 #define __ABSTRACTASTRONOMY_H__
 
-#include "declspec.h"
-#include "atime.h"
-#include "julianday.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/atime.h>
+#include <osgHimmel/julianday.h>
 
 #include <osg/Vec3>
 #include <osg/Matrix>

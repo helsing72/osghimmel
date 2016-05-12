@@ -27,9 +27,9 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "perlinmapgenerator.h"
+#include <osgHimmel/perlinmapgenerator.h>
 
-#include "noise.h"
+#include <osgHimmel/noise.h>
 
 #include <stdlib.h>
 #include <math.h>

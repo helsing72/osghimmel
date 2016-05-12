@@ -31,7 +31,7 @@
 #ifndef __HIMMELENVMAP_H__
 #define __HIMMELENVMAP_H__
 
-#include "declspec.h"
+#include <osgHimmel/declspec.h>
 
 #include <osg/Group>
 #include <osg/Camera>

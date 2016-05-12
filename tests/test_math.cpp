@@ -32,7 +32,7 @@
 
 #include "test.h"
 
-#include "osgHimmel/mathmacros.h"
+#include <osgHimmel/mathmacros.h>
 
 
 using namespace osgHimmel;

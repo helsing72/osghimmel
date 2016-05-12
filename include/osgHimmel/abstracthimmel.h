@@ -31,8 +31,8 @@
 #ifndef __ABSTRACTHIMMEL_H__
 #define __ABSTRACTHIMMEL_H__
 
-#include "declspec.h"
-#include "typedefs.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/typedefs.h>
 
 #include <osg/MatrixTransform>
 #include <osg/NodeCallback>

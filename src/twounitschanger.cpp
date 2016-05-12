@@ -27,11 +27,11 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "twounitschanger.h"
+#include <osgHimmel/twounitschanger.h>
 
-#include "interpolate.h"
-#include "pragmanote.h"
-#include "mathmacros.h"
+#include <osgHimmel/interpolate.h>
+#include <osgHimmel/pragmanote.h>
+#include <osgHimmel/mathmacros.h>
 
 #include <osg/Notify>
 

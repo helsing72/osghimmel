@@ -17,13 +17,12 @@
 *  THE SOFTWARE.
 */
 
-#include "osgposter.h"
+#include <osgHimmel/osgposter.h>
 
 #include <osg/ArgumentParser>
 #include <osg/Camera>
 #include <osg/Texture2D>
 
-//#include <osgDB/ReadFile>
 #include <osgDB/WriteFile>
 
 #include <osgViewer/Viewer>

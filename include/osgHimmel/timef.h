@@ -31,8 +31,8 @@
 #ifndef __TIMEF_H__
 #define __TIMEF_H__
 
-#include "declspec.h"
-#include "typedefs.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/typedefs.h>
 
 #include <time.h>
 

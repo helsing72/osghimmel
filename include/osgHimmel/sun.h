@@ -31,10 +31,10 @@
 #ifndef __SUN_H__
 #define __SUN_H__
 
-#include "declspec.h"
-#include "typedefs.h"
-#include "julianday.h"
-#include "coords.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/typedefs.h>
+#include <osgHimmel/julianday.h>
+#include <osgHimmel/coords.h>
 
 
 namespace osgHimmel

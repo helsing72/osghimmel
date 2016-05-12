@@ -27,9 +27,9 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "paraboloidmappedhimmel.h"
+#include <osgHimmel/paraboloidmappedhimmel.h>
 
-#include "horizonband.h"
+#include <osgHimmel/horizonband.h>
 
 #include "shaderfragment/common.h"
 #include "shaderfragment/blend_normal.h"

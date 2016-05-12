@@ -28,10 +28,10 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 
-#include "cloudlayerhighgeode.h"
+#include <osgHimmel/cloudlayerhighgeode.h>
 
-#include "noise.h"
-#include "himmelquad.h"
+#include <osgHimmel/noise.h>
+#include <osgHimmel/himmelquad.h>
 
 #include "shaderfragment/common.h"
 #include "shaderfragment/bruneton_common.h"

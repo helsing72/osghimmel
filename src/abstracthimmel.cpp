@@ -27,10 +27,10 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "abstracthimmel.h"
+#include <osgHimmel/abstracthimmel.h>
 
-#include "mathmacros.h"
-#include "timef.h"
+#include <osgHimmel/mathmacros.h>
+#include <osgHimmel/timef.h>
 
 #include <osg/Depth>
 #include <osg/NodeVisitor>

@@ -28,11 +28,11 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 
-#include "noise.h"
+#include <osgHimmel/noise.h>
 
-#include "mathmacros.h"
-#include "interpolate.h"
-#include "strutils.h"
+#include <osgHimmel/mathmacros.h>
+#include <osgHimmel/interpolate.h>
+#include <osgHimmel/strutils.h>
 
 #include "shaderfragment/noise.h"
 

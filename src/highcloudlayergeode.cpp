@@ -28,13 +28,14 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 
-#include "highcloudlayergeode.h"
+#include <osgHimmel/highcloudlayergeode.h>
 
-#include "noise.h"
-#include "himmel.h"
-#include "mathmacros.h"
-#include "himmelquad.h"
-#include "timef.h"
+#include <osgHimmel/noise.h>
+#include <osgHimmel/himmel.h>
+#include <osgHimmel/mathmacros.h>
+#include <osgHimmel/himmelquad.h>
+#include <osgHimmel/timef.h>
+#include <osgHimmel/strutils.h>
 
 #include "shaderfragment/common.h"
 #include "shaderfragment/bruneton_common.h"
@@ -50,7 +51,6 @@
 #include <osg/BlendFunc>
 
 #include <assert.h>
-#include "strutils.h"
 #include <cstdlib>
 
 

@@ -31,7 +31,7 @@
 #ifndef __DUBECLOUDLAYERGEODE_H__
 #define __DUBECLOUDLAYERGEODE_H__
 
-#include "declspec.h"
+#include <osgHimmel/declspec.h>
 
 #include <osg/Group>
 

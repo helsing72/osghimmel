@@ -27,9 +27,9 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "gaussianmapgenerator.h"
+#include <osgHimmel/gaussianmapgenerator.h>
 
-#include "mathmacros.h"
+#include <osgHimmel/mathmacros.h>
 
 #include <stdlib.h>
 #include <assert.h>

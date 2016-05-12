@@ -31,20 +31,20 @@
 #ifndef __PROCEDURALHIMMEL_H__
 #define __PROCEDURALHIMMEL_H__
 
-#include "declspec.h"
-#include "abstracthimmel.h"
-#include "atime.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/abstracthimmel.h>
+#include <osgHimmel/atime.h>
 
 #ifdef OSGHIMMEL_EXPORTS
 
-#include "abstractastronomy.h"
-#include "atmospheregeode.h"
-#include "moongeode.h"
-#include "moonglaregeode.h"
-#include "starsgeode.h"
-#include "starmapgeode.h"
-#include "highcloudlayergeode.h"
-#include "dubecloudlayergeode.h"
+#include <osgHimmel/abstractastronomy.h>
+#include <osgHimmel/atmospheregeode.h>
+#include <osgHimmel/moongeode.h>
+#include <osgHimmel/moonglaregeode.h>
+#include <osgHimmel/starsgeode.h>
+#include <osgHimmel/starmapgeode.h>
+#include <osgHimmel/highcloudlayergeode.h>
+#include <osgHimmel/dubecloudlayergeode.h>
 
 #else // #ifdef OSGHIMMEL_EXPORTS
 

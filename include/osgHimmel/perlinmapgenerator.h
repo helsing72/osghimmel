@@ -31,7 +31,7 @@
 #ifndef __PERLIN_MAP_GENERATOR_H__
 #define __PERLIN_MAP_GENERATOR_H__
 
-#include "declspec.h"
+#include <osgHimmel/declspec.h>
 
 
 namespace osgHimmel

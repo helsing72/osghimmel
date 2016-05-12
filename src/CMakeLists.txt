@@ -29,8 +29,6 @@
 
 set(HEADER_PATH ${PROJECT_SOURCE_DIR}/include/osgHimmel)
 
-# remove when all source files include <osgHimmel/xyz.h>
-include_directories(${HEADER_PATH})
 
 set(LIB_PUBLIC_HDRS
   ${HEADER_PATH}/abstracthimmel.h
@@ -193,7 +191,7 @@ else()
 endif()
 
 if(OPTION_MAKE_SKYBOX)
-  ADD_DEFINITIONS("-DOSGHIMMEL_EXPOSE_SHADERS")
+  add_definitions("-DOSGHIMMEL_EXPOSE_SHADERS")
 endif()
 
 install(TARGETS osgHimmel

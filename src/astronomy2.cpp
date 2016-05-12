@@ -27,14 +27,14 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "astronomy2.h"
+#include <osgHimmel/astronomy2.h>
 
-#include "earth2.h"
-#include "sun2.h"
-#include "moon2.h"
-#include "stars.h"
-#include "siderealtime.h"
-#include "interpolate.h"
+#include <osgHimmel/earth2.h>
+#include <osgHimmel/sun2.h>
+#include <osgHimmel/moon2.h>
+#include <osgHimmel/stars.h>
+#include <osgHimmel/siderealtime.h>
+#include <osgHimmel/interpolate.h>
 
 
 namespace osgHimmel

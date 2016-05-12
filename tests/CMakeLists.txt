@@ -56,8 +56,7 @@ set_target_properties(tests
 	PROPERTIES
 	DEBUG_POSTFIX "d${DEBUG_POSTFIX}")		
 	
-install(TARGETS tests
-    DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+install(TARGETS tests DESTINATION bin)
 
 # install
 
@@ -70,7 +69,7 @@ install(FILES
     "${OSG_BINARY_DIR}/osg${OSG_SOVERSION}-osgViewerd.dll" 
     "${OSG_BINARY_DIR}/ot12-OpenThreadsd.dll" 
     "${OSG_BINARY_DIR}/zlib1d.dll" 
-    DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+    DESTINATION bin
     CONFIGURATIONS Debug)
 
 install(FILES 
@@ -82,5 +81,5 @@ install(FILES
     "${OSG_BINARY_DIR}/osg${OSG_SOVERSION}-osgViewer.dll" 
     "${OSG_BINARY_DIR}/ot12-OpenThreads.dll" 
     "${OSG_BINARY_DIR}/zlib1.dll" 
-    DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
-    CONFIGURATIONS Release)	
+    DESTINATION bin
+    CONFIGURATIONS Release)

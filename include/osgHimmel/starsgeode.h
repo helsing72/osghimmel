@@ -31,8 +31,8 @@
 #ifndef __STARSGEODE_H__
 #define __STARSGEODE_H__
 
-#include "declspec.h"
-#include "brightstars.h"
+#include <osgHimmel/declspec.h>
+#include <osgHimmel/brightstars.h>
 
 #include <osg/Geode>
 

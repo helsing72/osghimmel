@@ -31,7 +31,7 @@
 #ifndef __NOISE_H__
 #define __NOISE_H__
 
-#include "declspec.h"
+#include <osgHimmel/declspec.h>
 
 #include <string>
 

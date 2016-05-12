@@ -27,10 +27,10 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "atime.h"
+#include <osgHimmel/atime.h>
 
-#include "mathmacros.h"
-#include "timef.h"
+#include <osgHimmel/mathmacros.h>
+#include <osgHimmel/timef.h>
 
 #include <assert.h>
 

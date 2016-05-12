@@ -27,9 +27,9 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE.
 
-#include "strutils.h"
+#include <osgHimmel/strutils.h>
 
-#include "mathmacros.h"
+#include <osgHimmel/mathmacros.h>
 
 #include <stdio.h>
 #include <stdarg.h>
