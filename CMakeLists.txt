@@ -55,91 +55,73 @@ endmacro()
 
 # config
 
-set(PROJECT_NAME osgHimmel)
-set(PROJECT_NAME osgHimmel)
+project(osgHimmel C CXX)
 
-project(${PROJECT_NAME} C CXX)
-
-set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "limited configs" FORCE)
+# only msvc have multiple configurations in same build dir
+if(MSVC)
+ set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "limited configs" FORCE)
+endif()
 
 set(VERSION_MAJOR "0" CACHE STRING "${PROJECT_NAME} Major Version")
 set(VERSION_MINOR "0" CACHE STRING "${PROJECT_NAME} Minor Version")
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG   ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG   ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG   ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
 
-option(OPTION_MAKE_DEMOS "Make Demos" ON)
-option(OPTION_MAKE_SKYBOX "Make SkyBox - Sandbox for osgHimmel (requires Qt)" ON)
-option(OPTION_MAKE_TESTS "Make Tests" ON)
+option(OSGHIMMEL_MAKE_DEMOS "Make Demos" ON)
+option(OSGHIMMEL_MAKE_SKYBOX "Make SkyBox - Sandbox for osgHimmel (requires Qt)" ON)
+option(OSGHIMMEL_MAKE_TESTS "Make Tests" ON)
 
 
 # 3rdp and resources
 
 find_package(OpenGL REQUIRED)
-find_package(OpenSceneGraph REQUIRED 
-    osgViewer 
-    osgUtil 
-    osgDB 
-    osgGA
-	osgText)
-
-string(REPLACE "include" "bin" OSG_BINARY_DIR ${OSG_INCLUDE_DIR})
-
-set(OSG_BINARY_DIR ${OSG_BINARY_DIR} CACHE PATH "Binary directory containing OSG dlls.")
-set(OSG_SOVERSION "115" CACHE STRING "OSG binaries version (osg##.dll).")
-set(OPENSCENEGRAPH_VERSION "3.3.3" CACHE STRING "OSG version for plugins (osgPlugins-##).")
-
+find_package(OpenSceneGraph 3.0.0 REQUIRED osgDB osgGA osgText osgViewer osgUtil)
 
 # lib/bin copy
 
-set(OSG_PLUGIN_DIR "${OSG_BINARY_DIR}/osgPlugins-${OPENSCENEGRAPH_VERSION}")
-
-if(NOT EXISTS ${OSG_PLUGIN_DIR}/)
-    message(WARNING "osgPlugins dir not found, please specify OSG_PLUGIN_DIR.")
-endif()
-
-if(NOT EXISTS ${OSG_BINARY_DIR}/osg${OSG_SOVERSION}-osgd.dll)
-    message(WARNING "OSG_SOVERSION (${OSG_SOVERSION}) seems wrong. ${OSG_BINARY_DIR}/osg${OSG_SOVERSION}-osgd.dll not found.")
-endif()
-
+set(OSG_PLUGINS osgPlugins-${OPENSCENEGRAPH_VERSION})
 
 # sources
+include_directories(${OPENSCENEGRAPH_INCLUDE_DIRS})
 
-include_directories(
-    ${CMAKE_BINARY_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${PROJECT_SOURCE_DIR}/3rdp
-    ${PROJECT_SOURCE_DIR}/include
-    ${OSG_INCLUDE_DIR})
+# osgHimmel public includes
+include_directories(include)
 
+# add the osgHimmel library source
+add_subdirectory(src)
 
-add_subdirectory("src")
-if(OPTION_MAKE_TESTS)
-    add_subdirectory("tests")
+if(OSGHIMMEL_MAKE_TESTS)
+  add_subdirectory(tests)
 endif()
-if(OPTION_MAKE_DEMOS OR OPTION_MAKE_SKYBOX)
-	add_subdirectory("examples")
+if(OSGHIMMEL_MAKE_DEMOS OR OSGHIMMEL_MAKE_SKYBOX)
+  add_subdirectory(examples)
 endif()
 
 
 # cpack deploy
 
-set(CPACK_GENERATOR "ZIP")
-set(CPACK_SOURCE_GENERATOR "ZIP")
+set(CPACK_PACKAGE_CONTACT "helsing72@users.noreply.github.com")
 
 set(CPACK_PACKAGE_VERSION_MAJOR ${VERSION_MAJOR})
 set(CPACK_PACKAGE_VERSION_MINOR ${VERSION_MINOR})
 set(CPACK_PACKAGE_VERSION_PATCH 0)
 
-set(CPACK_INSTALL_DIRECTORIES ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
-set(CPACK_IGNORE_FILES "/.pdb/;/.ilk/;/\\.svn/;/\\.hg/;/\\.git/;\\.swp$;\\.#;/#")
-set(CPACK_OUTPUT_FILE_PREFIX ${CMAKE_SOURCE_DIR})
+# provide license text with package
+set(CPACK_RESOURCE_FILE_LICENSE "${PROJECT_SOURCE_DIR}/LICENSE.txt")
+if(WIN32)
+  set(CPACK_GENERATOR ZIP NSIS)
+  set(CPACK_SOURCE_GENERATOR ZIP)
+else()
+  set(CPACK_GENERATOR DEB TGZ)
+  set(CPACK_SOURCE_GENERATOR TGZ)
+endif()
 
 include(CPack)
